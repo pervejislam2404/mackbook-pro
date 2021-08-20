@@ -94,7 +94,8 @@ function setTotalPrice() {
 
 document.getElementById("promo-code-button").addEventListener("click", function() {
     let display = document.getElementById("promo-code-display").value;
-    if (display == "stevekaku") {
+    let kaku = "stevekaku";
+    if (display.toLowerCase() == kaku.toLowerCase()) {
         const total = document.getElementById("intotal-price").innerText;
         const totalPrice = Number(total);
         document.getElementById("commision-price").innerText = totalPrice - (totalPrice * 0.2);
