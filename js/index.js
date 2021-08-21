@@ -69,7 +69,7 @@ function getDeliveryCost(term) {
     if (term == "free") {
         document.getElementById("delivery-cost").innerText = 0;
     } else {
-        document.getElementById("delivery-cost").innerText = 25;
+        document.getElementById("delivery-cost").innerText = 20;
     }
 }
 
