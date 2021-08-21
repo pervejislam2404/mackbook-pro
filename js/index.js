@@ -7,18 +7,25 @@ function setMemoryCost(quantity) {
         document.getElementById("extra-memory-cost").innerText = 180;
     }
 }
+
+
+
 // price-for-8gb-memory
 
 document.getElementById("8gb-memory").addEventListener("click", function(e) {
-        setMemoryCost(8)
-        setTotalPrice();
-    })
-    // price-for-16gb-memory
+    setMemoryCost(8)
+    setTotalPrice();
+})
+
+
+// price-for-16gb-memory
 
 document.getElementById("16gb-memory").addEventListener("click", function(e) {
     setMemoryCost(16)
     setTotalPrice();
 })
+
+
 
 // storage-cost-calculate-function
 
@@ -31,6 +38,8 @@ function setStorageCost(quantity) {
         document.getElementById("extra-storage-cost").innerText = 0;
     }
 }
+
+
 
 // price-for-256gb-storage
 document.getElementById("256gb-storage").addEventListener("click", function(e) {
@@ -50,6 +59,8 @@ document.getElementById("1tb-storage").addEventListener("click", function(e) {
     setStorageCost("1tb")
     setTotalPrice();
 })
+
+
 
 
 // delivery-cost-calculate-function
@@ -89,8 +100,12 @@ function setTotalPrice() {
     const deliveryCost = Number(delivery)
     const totalPrice = storageCost + memoryCost + deliveryCost + fixedCost;
     document.getElementById("intotal-price").innerText = totalPrice;
+    document.getElementById("commision-price").innerText = totalPrice;
 
 }
+
+
+// setting-the-total-discount-price 
 
 document.getElementById("promo-code-button").addEventListener("click", function() {
     let display = document.getElementById("promo-code-display").value;

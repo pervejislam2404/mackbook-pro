@@ -10,69 +10,96 @@
 </head>
 
 <body>
+
+
     <div class="w-4/6 grid grid-cols-2 mx-auto gap-5">
+        <!-- container-for-image -->
         <div class="img-section py-12 px-5">
             <img src="images/mac.png" alt="" srcset="">
         </div>
+
+        <!-- container-for-description -->
         <div class="description-section p-5">
+            <!-- product-status -->
             <div class="capitalize py-8">
                 <h1 class="text-4xl py-4">customie your blue 24-inch iMac with apple M1 chip.</h1>
                 <p class="text">apple M1 CHIP WITH 8-COR cpu with 4 performacne cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Magic Keyboard US english.</p>
             </div>
+
+            <!-- memory-configuration-area -->
             <div class="memory-sectoin py-6">
                 <h1 class='capitalize font-bold'>memory</h1>
                 <button id="8gb-memory" class="border bg-none p-2 hover:bg-black hover:text-white">8GB unified memory</button>
                 <button id="16gb-memory" class="border bg-none p-2 hover:bg-black hover:text-white">16GB unified memory</button>
             </div>
+
+            <!-- storage-configuration-area -->
             <div class="storage-section py-6">
                 <h1 class='capitalize font-bold'>Storage</h1>
                 <button id="256gb-storage" class="border bg-none p-2 hover:bg-black hover:text-white">256GB SSD storage</button>
                 <button id="512gb-storage" class="border bg-none p-2 hover:bg-black hover:text-white">512GB SSD storage</button>
                 <button id="1tb-storage" class="border bg-none p-2 hover:bg-black hover:text-white">1TB SSD storage</button>
             </div>
+
+            <!-- delivery-cost -->
             <div class="delivery-terms py-6">
                 <h1 class="capitalize font-bold">choose your delivery option</h1>
                 <button id="delivery-free" class="border bg-none p-2 hover:bg-black hover:text-white">Friday, Aug 25 FREE Prime Delivery</button>
                 <button id="delivery-charge" class="border bg-none p-2 hover:bg-black hover:text-white">Friday, Aug 21 Delivery charge $20</button>
             </div>
+
+            <!-- price-calculation-section -->
             <div class="pricing-section w-3/6 font-bold capitalize">
+                <!-- fixed-price -->
                 <div class="flex justify-between align-center p-2">
                     <p>Best price</p>
                     <p>$<span id="fixed-price">1299</span></p>
                 </div>
                 <hr>
+
+                <!-- memory-cost -->
                 <div class="flex justify-between align-center p-2">
                     <p>extra memory cost</p>
                     <p>$<span id="extra-memory-cost">0</span></p>
                 </div>
                 <hr>
+
+                <!-- storage-cost -->
                 <div class="flex justify-between align-center p-2">
                     <p>extra storage cost</p>
                     <p>$<span id="extra-storage-cost">0</span></p>
                 </div>
                 <hr>
+
+                <!-- delivery-cost -->
                 <div class="flex justify-between align-center p-2">
                     <p>delivery charge</p>
                     <p>$<span id="delivery-cost">0</span></p>
                 </div>
                 <div class="w-100 h-px bg-black"></div>
+
+                <!-- total-cost -->
                 <div class="flex justify-between align-center p-2">
                     <p>total price</p>
                     <p>$<span id="intotal-price">1299</span></p>
                 </div>
                 <hr>
+
+                <!-- promo-code-section -->
                 <div class="promo-code my-8">
                     <p>add promo code</p>
                     <input id="promo-code-display" type="text" class="bg-none border p-1">
-                    <button id="promo-code-button" class="bg-red-600 text-white p-1 capitalize rounded">apply</button>
+                    <button id="promo-code-button" class="bg-red-600 text-white p-1 capitalize rounded px-2">apply</button>
                 </div>
             </div>
         </div>
 
     </div>
-    <div class="w-4/6 my-20 mx-auto">
+
+    <!-- discount-balance -->
+    <div class="w-4/6 mx-auto mb-12">
         <hr>
-        <p class="text-4xl text-center capitalize pt-5">total: <span id="commision-price"> 0</span>$</p>
+        <p class="text-5xl text-center capitalize pt-3">total: <span id="commision-price">1299</span>$</p>
     </div>
 
     <!-- scripting -->
