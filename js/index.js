@@ -90,14 +90,19 @@ document.getElementById("delivery-charge").addEventListener("click", function(e)
 // total-price-setting-function
 
 function setTotalPrice() {
+    // best-price
     const fixed = document.getElementById("fixed-price").innerText;
     const fixedCost = Number(fixed);
+    // storage-price
     const storage = document.getElementById("extra-storage-cost").innerText;
     const storageCost = Number(storage)
+        // memory-price
     const memory = document.getElementById("extra-memory-cost").innerText;
     const memoryCost = Number(memory)
+        // delivery-price
     const delivery = document.getElementById("delivery-cost").innerText;
     const deliveryCost = Number(delivery)
+        // total-price
     const totalPrice = storageCost + memoryCost + deliveryCost + fixedCost;
     document.getElementById("intotal-price").innerText = totalPrice;
     document.getElementById("commision-price").innerText = totalPrice;
@@ -108,13 +113,13 @@ function setTotalPrice() {
 // setting-the-total-discount-price 
 
 document.getElementById("promo-code-button").addEventListener("click", function() {
-    let display = document.getElementById("promo-code-display").value;
-    let kaku = "stevekaku";
-    if (display.toLowerCase() == kaku.toLowerCase()) {
+    let display = document.getElementById("promo-code-display").value.toLowerCase();
+    let kaku = "stevekaku".toLowerCase();
+    if (display == kaku) {
         const total = document.getElementById("intotal-price").innerText;
         const totalPrice = Number(total);
         document.getElementById("commision-price").innerText = totalPrice - (totalPrice * 0.2);
-        document.getElementById("promo-code-display").value = " ";
+        document.getElementById("promo-code-display").value = "";
     }
 
 })
